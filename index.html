@@ -1,0 +1,73 @@
+<!-- Comments in HTML look like this! They're pretty wild. -->
+<!DOCTYPE html>
+<html>
+	<!-- Content in the "head" tag doesn't actually show up on the page. It's mostly for setting up stuff like the title and linking CSS or JS. -->
+	<head>
+		<meta charset="utf-8">
+		<!-- This is the title that shows up in the tab -->
+		<title>Welcome to my page</title>
+		<!-- Here is where you tell your HTML where to look for in term of styling the page. We've linked a favicon (lil image that shows up in the tab), external CSS page ("style.css") and a Google Fonts font-->
+		<link rel="icon" type="image/x-icon" href="img/myimg.jpg">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+	</head>
+	<!-- Here's where the fun begins! Stuff inside of the body tag is displayed on the page. -->
+	<body>
+		<br/> <!-- The "br" tag represents a line-break and is self-closing. -->
+		<div id="about-me" style=" margin-right: 10% !important ;"> <!-- "div"s group together related content. -->
+			<!-- Check it out- it's an image! You tell the page where the picture is located in your file directory using the "src" attribute. This picture is in the "img" folder of our project. There's also an "alt" attribute, which is a short description of the image that makes life easier for people who use screen-readers. -->
+			<img id="self-photo" src="img/myimg.jpg" alt="Chaitany Ganesuni">
+			<br/>
+			<div >
+			<p class = "chai" style ="font-size: 30px;  margin-top: 0.25%; 
+			top-right:5%;	color: solid black; -webkit-text-stroke: 0.75px yellow !important;">Chaitanya Ganesuni</p>  
+			</div>
+			<!--<h2 style=" margin-top: 0.5% !important ;">Hello there!</h2>
+			 "h1" means header1. Use is for the most important header. -->
+			<div >
+				<p>currently Pursuing my B.Tech degree at <font style="color: solid black; -webkit-text-stroke: 0.75px blue !important;">Vellore Institute of Technology - Andhra Pradesh (VIT-AP) University </font>, Amaravati, India.</p>
+                                                               <p>An always dedicated student with an appetite to learn.Aspiring to be a part of the management institute with a perfect blend of technical skills.An avid <font style="color: solid black; -webkit-text-stroke: 0.75px blue !important;">Cyber Security </font>buff .A devotee of <font style="color: solid black; -webkit-text-stroke: 0.75px blue !important;">information, security, penetration and testing</font></p>
+
+				
+			</div>
+		</div>
+
+		
+
+		<div id="projects" style=" margin-right: 10% !important;">
+			<h2>My Projects</h2> <!-- "h2" means header2. Use it for less important headers than h1. -->
+			<p>Here are some projects I've worked on:</p>
+			<div class="column">
+				<!-- We're wrapping an "img" tag in a "a" tag, so when you click on the image, it redirects you to whatever link is referenced in the "href" property. target="_" means it will open the link in a new tab. -->
+				<ol>
+					<li> Machine Learning based Password Strength Classification </li>
+					<li> Face Mask detection using deep learning and open cv </li>
+                                                                                <li> Built my own ransomware using JAVA</li>
+
+
+				</ol>
+			</div>
+		</div>
+		<br/>
+	  	
+		<br/>
+
+		<div id="contact">
+			<h2>Contact Me</h2>
+			<p>Interested in connecting?</p>
+			<!-- "ul" stands for unordered list: it's a list with bullet points rather than numbers. Try making an "ol" (ordered list). -->
+			<ul id="contact-icons">
+				<!-- Each "li" (list object) is an "img" that is linked to a particular social media using the "a" tag. If you click on the img, it will redirect you to whatever link is specified as the "href" in the "a" tag. -->
+				<li class="contact-img"><a href="https://www.linkedin.com/in/chaitanya-ganesuni-1aa37a18a/" target="_blank"><img src="img/linked-in.png" alt="LinkedIn Logo"></a></li>
+				<!--<li class="contact-img"><a href="[INSERT TWITTER URL]" target="_blank"><img src="img/twitter.png" alt="Twitter Logo"></a></li>
+				<li class="contact-img"><a href="https://www.facebook.com/profile.php?id=100032837404617" target="_blank"><img src="img/facebook.png" alt="Facebook Logo"></a></li>
+				<li class="contact-img"><a href="https://www.instagram.com/chaitanya_ganesuni/" target="_blank"><img src="img/instagram.PNG" alt="Instagram Logo"></a></li> -->
+				<li class="contact-img"><a href="https://github.com/ChaitanyaGanesuni" target="_blank"><img src="img/github.png" alt="Github Logo"></a></li>
+				<li class="contact-img"><a href="chaitanya.ganesuni20@gmail.com" target="_blank"><img src="img/email.png" alt="Email"></a></li>
+			</ul>
+		</div>
+		<!-- Make sure to close up all of the tags that require closing tags! -->
+		<br/>
+		<br/>
+	</body>
+</html>
